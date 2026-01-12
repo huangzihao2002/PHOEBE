@@ -46,7 +46,7 @@ const navigateImage = (direction: number) => {
   const newIndex = currentIndex.value + direction
   if (newIndex >= 0 && newIndex < images.length) {
     currentIndex.value = newIndex
-    selectedImage.value = images[newIndex]
+    selectedImage.value = images[newIndex] ?? null
   }
 }
 </script>
